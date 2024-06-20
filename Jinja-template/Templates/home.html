@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block adi %}
+<h3>Content</h3>
+<ul>
+    <li>Home</li>
+    <li><a href=" {{url_for('about')}}", target="_blank">About  </a></li>
+    <li>Contact us </li>
+    <li>Career</li>
+    <li><a href=" {{ url_for('employees')}}", target="_blank">Employees</a></li>
+    <ul>
+        <li><a href="{{url_for ('managers')}}", target="_blank">Manager</a></li>
+    </ul>
+</ul>
+
+{% endblock adi %}
